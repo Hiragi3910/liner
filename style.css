@@ -1,0 +1,244 @@
+.btn-square {
+  display: inline-block;
+  font-size: 350%;
+  font-weight: bold;
+  padding: 0.3em 1.4em;
+  text-decoration: none;
+  border: #7e1b1b;
+  background: #ff2929;/*ボタン色*/
+  color: rgb(255, 255, 255);
+  border-bottom: solid 12px #7e1b1b;
+  border-radius: 3px;
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(12px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+.message_box1 {
+  overflow: hidden;
+  position: absolute;
+  width: 480px;
+  height: 230px;
+  background:linear-gradient(#9fbad5, 15%, #dbe7f3 50%, #b9d1e9 50%, #bad2ea, #b9d1e9);
+  border:1px solid #000000;
+  border-radius: 8px 8px 0px 0px;
+  left: 50%;
+  top: 100px;
+  transform: translate(-50%, 0%);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.message_box_margin1 {
+  position: absolute;
+  width: 1px;
+  height: 230px;
+  background-color: #ffffff;
+}
+.message_box_margin2 {
+  position: absolute;
+  width: 480px;
+  height: 1px;
+  background-color: #ffffff;
+}
+.message_box_margin3 {
+  position: absolute;
+  width: 1px;
+  height: 230px;
+  background-color: #26cfe2;
+  left: 479px;
+}
+.message_box_margin2 {
+  position: absolute;
+  width: 480px;
+  height: 2px;
+  background-color: #26cfe2;
+  top: 228px;
+}
+.message_box_title {
+  position: absolute;
+  font-size: 80%;
+  left: 12px;
+  top: 6px;
+}
+.message_box2 {
+  position: absolute;
+  width: 464px;
+  height: 192px;
+  background:linear-gradient(#ffffff, #ffffff 70%, #f0f0f0 70%);
+  left: 50%;
+  top: 30px;
+  transform: translate(-50%, 0px);
+}
+.message_box_text {
+  position: absolute;
+  left: 18%;
+  top: 28%;
+}
+.mark {
+  position: absolute;
+  width: 42px;
+  height: auto;
+  left: 30px;
+  top: 44px;
+}
+.ok_button {
+  position: absolute;
+  width: 90px;
+  height: 32px;
+  left: 78%;
+  top: 77%;
+  background-color: #3dcdf0;
+  border:1px solid #3c80b1;
+  border-radius: 5px;
+}
+.ok_button2 {
+  position: absolute;
+  width: 88px;
+  height: 30px;
+  background:linear-gradient(#ededed, #ededed 50%, #d6d6d6 50%);
+  border:1px solid #3c80b1;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cancel_button {
+  position: absolute;
+  width: 30px;
+  height: 16px;
+  left: 91%;
+  top: 10px;
+  background-color: #f0cbc3;
+  border:1px solid #431424;
+  border-radius: 3px;
+}
+.cancel_button2 {
+  position: absolute;
+  width: 30px;
+  height: 16px;
+  background:linear-gradient(#e9aa9b, #e9aa9b 50%, #b8432f 50%);
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  border:1px solid #f0cbc3;
+}
+.peke {
+  display: inline-block;
+  position: absolute;
+  color: #ffffff;
+  font-size: 190%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*ここまで*/
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*progress-bar*/
+.bar {
+  overflow:hidden;
+  width: 800px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: #DDD7CB;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -45%);
+}
+.progress {
+  width: 0;
+  height: 35px;
+  background: linear-gradient(45deg,#1f42e0 25%, #648fdf 25%, #648fdf 50%, #1f42e0 50%, #1f42e0 75%, #648fdf 75%, #648fdf);
+  background-size: 65px 65px;
+  animation: anime_stripe .8s infinite linear;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -45%);
+}
+@keyframes anime_stripe {
+  0% {  background-position-x: 0;}
+  100% {  background-position-x: -65px;}
+}
+/*ここまで*/
+.box{
+/*ボックス生成*/
+  border:4px solid #005907;
+  padding:25px;
+  background:linear-gradient(#d6ffdb, #abff8a);
+  border-radius:10px;
+  width: 800px;
+  height: 200px;
+/*中央配置*/
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+span.loading {
+  font-size: 190%;
+  position: absolute;
+  top: 61%;
+
+  display: inline-block;
+  white-space: nowrap;
+}
+  span.loading span {
+      display: inline-block;
+      width: 50px;
+      height: 4px;
+      vertical-align: -3px;
+
+      background-position: 0 0;
+      background-repeat: repeat-x;
+      background-size: 6px 100%;
+
+      background-image:-webkit-gradient(linear, left top, right top, from(transparent), color-stop(0.5, transparent), color-stop(0.5, #000), to(#000) );
+      background-image:-webkit-linear-gradient(left,transparent 2px,#000 4px);
+      background-image: linear-gradient(to right,transparent 2px,#000 4px);
+
+      -webkit-animation: animation 1.5s linear infinite;
+      animation: animation 1.5s linear infinite;
+  }
+@-webkit-keyframes animation {
+  0% { width: 0; }
+  100% { width: 30%; }
+}
+@keyframes animation {
+  0% { width: 0; }
+  100% { width: 30%; }
+}
+/*ここまで*/
+.big_box {
+  width: 800px;
+  height: auto;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.photo {
+  width: 800px;
+  height: auto;
+  margin: 0;
+}
+.message {
+  position: absolute;;
+  top: 750px;
+  left: 25px;
+  white-space: nowrap;
+  font-size: 140%;
+  line-height: 70%;
+}
